@@ -1,3 +1,4 @@
+> **Note:** I originally planned to use MongoDB for persistent storage, but I ran out of free uses on my account. For this project, I implemented in-memory storage in the backend instead. This means tasks are not saved after the server restarts.
 # Web Task Manager
 
 A full-stack web app for managing tasks. Built with React (frontend) and Node.js + Express (backend).
