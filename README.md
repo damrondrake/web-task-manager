@@ -1,6 +1,6 @@
 # Web Task Manager
 
-A full-stack web app for managing tasks. Built with React (frontend) and Node.js + Express + MongoDB (backend).
+A full-stack web app for managing tasks. Built with React (frontend) and Node.js + Express (backend).
 
 ## Project Structure
 - `/frontend` - React app
@@ -9,7 +9,7 @@ A full-stack web app for managing tasks. Built with React (frontend) and Node.js
 ## Setup Instructions
 
 ### Backend
-1. Go to the `backend` folder:
+1. Open a terminal and navigate to the `backend` folder:
    ```sh
    cd backend
    ```
@@ -17,14 +17,14 @@ A full-stack web app for managing tasks. Built with React (frontend) and Node.js
    ```sh
    npm install
    ```
-3. Set up MongoDB (local or Atlas) and configure your connection string in `.env`.
-4. Start the server:
+3. Start the server:
    ```sh
    npm start
    ```
+   The backend runs on [http://localhost:5000](http://localhost:5000) and uses in-memory storage (no database required).
 
 ### Frontend
-1. Go to the `frontend` folder:
+1. Open a new terminal and navigate to the `frontend` folder:
    ```sh
    cd frontend
    ```
@@ -36,8 +36,31 @@ A full-stack web app for managing tasks. Built with React (frontend) and Node.js
    ```sh
    npm start
    ```
+   The frontend runs on [http://localhost:3000](http://localhost:3000).
 
 ## Tech Stack
+- React (functional components, hooks)
+- Node.js + Express (REST API)
+- In-memory storage (no database required)
+
+## Features
+- Add, view, complete/incomplete, and delete tasks
+- Filter tasks: All, Completed, Incomplete
+- Responsive, modern UI
+- Error handling and loading states
+
+## Known Issues
+- Tasks are not persisted if the backend server restarts (in-memory only)
+- No user authentication
+
+## Extra Features
+- Professional, clean UI design
+- Task filters
+- Error and loading state feedback
+
+---
+
+Interns: Push your complete project to GitHub and submit the repo link.
 - React (frontend)
 - Node.js + Express (backend)
 - MongoDB (database)
