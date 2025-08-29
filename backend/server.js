@@ -17,19 +17,21 @@ app.get('/tasks', (req, res) => {
 
 // Add a new task
 app.post('/tasks', (req, res) => {
-  const { title, description } = req.body;
+  const { title, description, dueDate, priority } = req.body;
   if (!title) return res.status(400).json({ error: 'Title required' });
   const task = {
     id: nextId++,
     title,
     description: description || '',
     completed: false,
+    dueDate: dueDate || '',
+    priority: priority || 'Medium',
   };
   tasks.push(task);
   res.status(201).json(task);
 });
 
-// Update or toggle completion
+// Update or toggle completion, due date, or priority
 app.put('/tasks/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const update = req.body;
