@@ -114,7 +114,7 @@ function App() {
       <div className="container">
         <div className="add-task-section">
           <div style={{ marginBottom: '2rem' }}>
-            <h1 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Jetzy Task Manager</h1>
+            <h1 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Task Manager</h1>
             <button
               style={{ marginTop: '0.5rem', padding: '0.5rem 1rem', borderRadius: 8, border: 'none', background: darkMode ? '#222' : '#007bff', color: '#fff', cursor: 'pointer' }}
               onClick={() => setDarkMode(dm => !dm)}
