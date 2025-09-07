@@ -77,7 +77,3 @@ Interns: Push your complete project to GitHub and submit the repo link.
 
 ## Known Issues
 - None yet
-
----
-
-Interns: Push your complete project to GitHub and submit the repo link.
